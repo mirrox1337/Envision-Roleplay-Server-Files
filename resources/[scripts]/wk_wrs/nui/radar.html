@@ -1,0 +1,144 @@
+<!-- 
+
+    Wraith Radar System - v1.02
+    Created by WolfKnight
+    
+-->
+
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="radar.js" type="text/javascript"></script>
+        <link href="radar.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body onselectstart="return false;" ondragstart="return false;">
+		<!-- Police Radar -->
+		<div id="policeradar" style="display: none;"> 
+			<div class="antennalabel antennalabeltop">Radar Fram</div>
+
+			<div class="logo">PolisRad V2</div>
+
+			<div class="main">
+				<div class="container">
+					<div class="typecontainer">
+						<div class="text"><span class="fwdsame">RES</span></div>
+						<div class="text"><span class="fwdopp">MÖT</span></div>
+						<div class="text"><span class="fwdxmit">FRAM</span></div>
+					</div>
+
+					<div class="typecontainer">
+						<div class="text"><span class="bwdsame">RES</span></div>
+						<div class="text"><span class="bwdopp">MÖT</span></div>
+						<div class="text"><span class="bwdxmit">XMIT</span></div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="patrolcontainer">
+						<div class="speedsourcecontainer target" data-target="fwdspeed">
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+						</div>
+
+						<div class="label">FRAM</div>
+					</div>
+
+					<div class="patrolcontainer">
+						<div class="speedsourcecontainer target" data-target="bwdspeed">
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+						</div>
+
+						<div class="label">BAK</div>
+					</div>
+				</div>
+
+				<div class="container" style="width: 5px;">
+					<div class="arrowbox">
+						<i class="fa fa-arrow-up fwdarrowfront"></i>
+						<i class="fa fa-arrow-down fwdarrowback"></i>
+					</div>
+
+					<div class="arrowbox">
+						<i class="fa fa-arrow-up bwdarrowfront"></i>
+						<i class="fa fa-arrow-down bwdarrowback"></i>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="patrolcontainer" style="margin-top: 20px;">
+						<div class="speedfastcontainer target" data-target="fwdfast">
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+						</div>
+
+						<div class="label">FRAM KM/H</div>
+					</div>
+
+					<div class="patrolcontainer" style="margin-bottom: 20px;">
+						<div class="speedfastcontainer target" data-target="bwdfast">
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+						</div>
+
+						<div class="label">BAK KM/H</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="patrolcontainer">
+						<div class="speedfastcontainer patrol" data-target="patrolspeed">
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+							<div class="speednumber text"></div>
+						</div>
+
+						<div class="label">Fordons fart</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="antennalabel antennalabelbottom">Radar bak</div>
+		</div>
+
+
+		<!-- Police Radar - Remote control --> 
+		<div id="policeradarrc" style="display: none;">
+			<div class="container">
+				<button class="toggle" data-action="radar_toggle">AKTIVERA RADAR</button>
+			</div>
+
+			<div class="label">POLISRADAR FRAM</div>
+
+			<div class="container">
+				<button class="rowbutton frontopp" data-action="radar_frontopp">MÖT</button>
+				<button class="rowbutton frontxmit" data-action="radar_frontxmit">FRAM</button>
+				<button class="rowbutton frontsame" data-action="radar_frontsame">RES</button>
+			</div>
+
+			<div class="breakline"></div>
+
+			<div class="container">
+				<button class="rowbutton rearopp" data-action="radar_rearopp">MÖT</button>
+				<button class="rowbutton rearxmit" data-action="radar_rearxmit">FRAM</button>
+				<button class="rowbutton rearsame" data-action="radar_rearsame">RES</button>
+			</div>
+
+			<div class="label">POLISRADAR BAK</div>
+
+			<div class="container">
+				<button class="limit" data-action="radar_setlimit">ANGE MAX KM/H</button>
+			</div>
+
+			<div class="container">
+				<button class="close" data-action="close">STÄNG</button>
+			</div>
+		</div>
+    </body>
+</html>

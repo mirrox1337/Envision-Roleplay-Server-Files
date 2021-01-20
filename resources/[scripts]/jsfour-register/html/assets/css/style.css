@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+#wrapper {
+  display: none;
+  margin-top: 100px;
+}
+.inner {
+  float: middle;
+  display: inline-block;
+  width: 700px;
+  height: 600px;
+  background-color: rgb(27, 27, 27);
+  border: 3px solid rgb(36, 35, 35);
+  border-radius: 5px;
+  background-image: url("https://i.imgur.com/6sCb7Qa.png");
+  background-position: top;
+  background-size: 15%;
+  background-repeat: no-repeat;
+  background-position-y: 15px;
+}
+
+form {
+  width: 700px;
+  padding: 110px 20px 20px 20px;
+}
+.input-field input, .select-wrapper input {
+  color: #ffffff !important;
+}
+#register {
+  margin-top: 10px;
+  position: center;
+  width: 100%;
+  background: #038118 !important;
+}
+.caret {
+  display: none;
+}
+.dropdown-content {
+  top: 0 !important;
+}
+.select-wrapper li {
+  background: #333332 !important;
+  background-color: #252525
+}
+.select-wrapper li span {
+  color: #fff7f7 !important;
+}
+.select-wrapper .disabled {
+  background: #252525 !important;
+  background-color: black;
+}
+.select-wrapper .selected {
+  color: rgb(44, 43, 43);
+  background: #3f3e3e !important;
+}
+.datepicker-date-display {
+  background: #1d1d1d;
+}
+.datepicker-container button {
+  color: #313030;
+}
+.datepicker-container button:focus {
+  background: none;
+  color: white;
+}
+.datepicker-container .is-selected {
+  color: rgb(255, 253, 253);
+  background: rgb(0, 0, 0, 0.5) !important;
+}
+.dropdown-content li > a, .dropdown-content li > span  {
+  color: #fffefe !important;
+}
+.datepicker-container input {
+  color: #242324 !important;
+}
+label {
+ color: #fdfdfd !important;
+ text-shadow: -1px 0 rgba(0, 0, 0, 0.2), 0 1px rgba(0, 0, 0, 0.2), 1px 0 rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.2);
+ font-size: 20px;
+}
+.input-field input[type=text] {
+ border-bottom: 1px solid #2f2f2f !important;
+ box-shadow: 0 1px 0 0 #5d5d5d !important;
+}
+.input-field input[type=text]:focus + label {
+ color: #ffffff !important;
+}
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #2a2a2a !important;
+ box-shadow: 0 1px 0 0 #2e2d2e !important;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+@media only screen and (max-width: 1250px) {
+  .container {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,306 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Signika','sans-serif';
+    text-transform: capitalize;
+    color: white;
+    
+    
+}
+
+.ui {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 0;
+    background-image: url('https://i.imgur.com/4a1Yx7l.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 50%;
+    background-size: 25%;
+}
+
+.inventory {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1550px;
+    height: 600px;
+    background-color: rgba(27, 27, 27, 0.9);
+    border: solid 3px;
+    border-color: rgb(78, 77, 77, 0.1);
+    border-radius: 3px;
+    font-size: medium;
+}
+
+#playerInventory {
+    width: 625px;
+    height: 600px;
+    float: left;
+    overflow-y: scroll;
+
+}
+
+#controls {
+    width: 300px;
+    height: 600px;
+    float: left;
+    position: relative;
+    background-color: rgba(22, 21, 21, 0.8);
+    left: 0;
+    top: 0;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .4);
+}
+
+#playerInventory::-webkit-scrollbar-track,
+#otherInventory::-webkit-scrollbar-track {
+    background-color: rgba(66, 65, 65, 0.9);
+    border: solid 3px;
+    border-color: rgb(78, 77, 77, 0.1);
+    border: none;
+}
+
+#playerInventory::-webkit-scrollbar,
+#otherInventory::-webkit-scrollbar {
+    width: 0px;
+}
+
+#playerInventory::-webkit-scrollbar-thumb,
+#otherInventory::-webkit-scrollbar-thumb {
+    width: 0px;
+    height: 50px;
+    background-color: rgb(87, 84, 84);
+}
+
+
+#otherInventory {
+    width: 625px;
+    height: 600px;
+    float: left;
+    overflow-y: visible
+}
+
+#count {
+    border: 2px solid rgb(65, 63, 63);
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.slot {
+    float: left;
+    width: 117px;
+    height: 117px;
+    background-color: rgba(51, 50, 51, 0.8);
+    margin: 5px;
+    position: relative;
+    border: 2px solid rgb(65, 63, 63);
+    border-radius: 5px;
+}
+
+.slot:hover {
+    opacity: 0.8;
+}
+
+.item,
+.item-other {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-name {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 117px;
+    min-height: 20px;
+    z-index: 500;
+    font-size: 12px;
+    background-color: rgba(32, 31, 32, 0.8);
+}
+
+.ui-draggable-dragging .item-name,
+.ui-draggable-dragging .item-count {
+    display: none;
+}
+
+.item-count {
+    position: absolute;
+    top: 0;
+    text-align: right;
+    width: 114px;
+    height: 20px;
+    z-index: 500;
+}
+
+.ammoIcon {
+    width: 10px;
+    height: 10px;
+}
+
+.info-div {
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 5px;
+    background-color: rgba(42, 42, 42, 0.6);
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.controls-div {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.control {
+    width: 150px;
+    height: 40px;
+    background-color: rgba(49, 49, 49, 0.6);
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    border: inherit 3px;
+    border-color: rgba(27, 27, 27, 0.9);
+    border-radius: 3px;
+}
+
+.control.disabled {
+    background-color: rgba(34, 33, 33, 0.1);
+}
+
+.hoverControl {
+    background-color: rgb(49, 47, 47);
+}
+
+.item-name-bg {
+    width: 100%;
+    width: 117px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.info {
+    color: rgb(221, 221, 221);
+    font-size: 17px;
+    position: absolute;
+    top: 455px;
+    left: 46vw;
+    z-index: 1000;
+}
+
+#playerInventory::-webkit-scrollbar-track,
+#otherInventory::-webkit-scrollbar-track {
+    background-color: none;
+    border: none;
+}
+
+#playerInventory::-webkit-scrollbar,
+#otherInventory::-webkit-scrollbar {
+    width: 10px;
+    ##-background-color: rgba(39, 38, 38, 0.7);
+}
+
+#playerInventory::-webkit-scrollbar-thumb,
+#otherInventory::-webkit-scrollbar-thumb {
+    ##-background-color: rgba(39, 38, 38, 0.7);
+}
+
+.nearbyPlayerButton {
+    width: 100%;
+    margin-top: 5px;
+    display: block;
+    text-decoration: none;
+    padding: 2px;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(63, 57, 83, 0.226);
+    text-shadow: none;
+    font-size: 14px !important;
+    outline: none;
+    text-transform: none;
+    text-align: center;
+    line-height: 30px;
+    border: none;
+}
+
+.nearbyPlayerButton:hover {
+    background-color: rgba(34, 29, 46, 0.8);
+}
+
+#noSecondInventoryMessage {
+    width: 615px;
+    height: 580px;
+    line-height: 580px;
+    text-align: center;
+}
+
+@media (max-width: 1500px) {
+    .inventory {
+        width: 1300px;
+    }
+
+    #playerInventory {
+        width: 550px;
+    }
+
+    #controls {
+        width: 200px;
+    }
+
+    #otherInventory {
+        width: 550px;
+    }
+
+    #noSecondInventoryMessage {
+        width: 540px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .inventory {
+        width: 1000px;
+    }
+
+    #playerInventory {
+        width: 425px;
+    }
+
+    #controls {
+        width: 150px;
+    }
+
+    #otherInventory {
+        width: 425px;
+    }
+
+    #noSecondInventoryMessage {
+        width: 420px;
+    }
+}

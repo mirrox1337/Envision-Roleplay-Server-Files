@@ -1,0 +1,16 @@
+Locales['sv'] = {
+	["only_allow_car"]   = "Du kan bara parkera bilar här!",
+	["car_saved"]        = "Din bil är parkerad",
+	["press_to_save"]    = "Tryck ~INPUT_CONTEXT~ för att Parkera fordon",
+	["not_your_car"]     = "Du måste äga bilen",
+	["need_parking_fee"] = "Tryck ~INPUT_CONTEXT~ för att betala parkeringsavgiften ~g~%s kr~s~",
+	["not_enough_money"] = "Du har inga pengar",
+	["parking_fee"]      = "Parkeringsavgift: ~g~%skr~s~ per dag",
+	["pay_success"]      = "Du betalade parkeringavgift %skr och kan åka iväg nu.",
+	["parking_full"]     = "Parkeringsplatsen är full!",
+	["invalid_car"]      = "Är detta verkligen din bil?",
+	["already_parking"]  = "En bil med samma registreringsnummer är redan parkerad här",
+	["owner"]            = "Ägare: ~g~%s~s~",
+	["plate"]            = "Registreringsnummer: ~g~%s~s~",
+	["fee"]            = "Avgift: ~g~%s~s~kr",
+}

@@ -1,0 +1,129 @@
+#controls {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3em;
+	color: #FFF;
+	position: absolute;
+	bottom: 40;
+	right: 40;
+}
+
+.controls {
+	display: none;
+}
+
+.dialog {
+	font-family: 'Alata', sans-serif; 
+	background-color: rgba(44, 47, 51, 0.99);
+  	color: #fff;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 150px;
+	transform: translate(-50%, -50%);
+  	border-bottom: 5px solid rgba(35, 39, 42, 1.0);
+	border-top: 5px solid rgba(35, 39, 42, 1.0);
+	border-left: 5px solid rgba(35, 39, 42, 1.0);
+	border-right: 5px solid rgba(35, 39, 42, 1.0);
+  	border-radius: 7px;
+  	-webkit-box-shadow: 10px 9px 42px -5px rgba(0, 0, 0, 0.52);
+  	-moz-box-shadow: 10px 9px 42px -5px rgba(0, 0, 0, 0.52);
+	box-shadow: 10px 9px 42px -5px rgba(0, 0, 0, 0.52);
+}
+
+.head {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: #40E0D0;
+}
+
+.dialog.big {
+	height: 200px;
+}
+
+.dialog .head {
+	background-color: #27272d;
+	text-align: center;
+	height: 40px;
+}
+
+.dialog .head span::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.dialog input[type="text"] {
+  width: 60%;
+  height: 32px;
+  outline: 0;
+  background-color: rgba(35, 39, 42, 1.0);
+  text-align: center;
+  margin-top: 26px;
+  margin-left: 125px;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  border: 2px solid rgba(35, 39, 42, 1.0);
+  border-radius: 6px;
+}
+
+.dialog input[type="text"]:active, .dialog input[type="text"]:hover {
+  color: white;
+}
+
+.dialog textarea {
+	width: 100%;
+	height: 128px;
+}
+
+.dialog button[name="submit"] {
+	width: 17.6%;
+	height: 32px;
+  margin-left: 160px;
+  font-weight: 300;
+  color: #00b159;
+  border: 1px solid #00b159;
+  border-radius: 6px;
+  text-transform: uppercase;
+  background: 0;
+  outline: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.dialog button {
+  z-index: 9999;
+	transform: translate(-0%, 50%);
+}
+
+.dialog button[name="cancel"] {
+	width: 17.6%;
+	height: 32px;
+  margin-left: 80px;
+  border: 1px solid #d11141;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #d11141;
+  outline: 0;
+  background: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.dialog button[name="cancel"]:hover {
+  letter-spacing: 1px;
+  color: #920b2d;
+  width: 17.6%;
+  border: 1.2px solid #920b2d;
+  border-radius: 6px;
+}
+
+.dialog button[name="submit"]:hover {
+  letter-spacing: 1px;
+  color: #007b3e;
+  width: 17.6%;
+  border: 1.2px solid #007b3e;
+  border-radius: 6px;
+}

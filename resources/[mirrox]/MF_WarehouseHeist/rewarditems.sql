@@ -1,0 +1,17 @@
+INSERT INTO `items` (`name`, `label`, `limit`) VALUES
+  ('antifreeze','Antifreeze',-1),
+  ('acetone','Acetone',-1),
+  ('silverbull','Silver Bullion',-1),
+  ('goldbull','Gold Bullion',-1),
+  ('iphone','iPhone',-1),
+  ('ipad','iPad',-1),
+  ('opal','Opal',-1),
+  ('sapphire','Sapphire',-1),
+  ('rolex','Rolex',-1),
+  ('diamondring','Diamond Ring',-1),
+  ('medikit','Medikit',-1),
+  ('morphine','Morphine',-1),
+  ('meth','Meth',-1),
+  ('cocaine','Cocaine',-1),
+  ('wine','Wine',-1),
+  ('whiskey','Whiskey',-1);

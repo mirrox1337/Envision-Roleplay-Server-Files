@@ -1,0 +1,115 @@
+<style>
+
+	.app {
+		display: none;
+		background-image: url('img/tablet.png');
+		background-size: 100%;
+
+		position:absolute;
+		left:0; right:0;
+		top:0; bottom:0;
+		margin: auto;
+	
+		height: 843px;
+		width: 566px;
+		overflow: hidden;
+	
+	}
+	
+	#screen {
+	
+		position:absolute;
+		left:0; right:0;
+		top:11; bottom:0;
+		margin: auto;
+	
+		height: 685px;
+		width: 425px;
+		overflow:auto;
+	}
+	
+	
+	body {
+		
+		height: 100%;
+	}
+	
+	textarea {
+		
+		width: 100%;
+		
+	}
+	
+	.editor {
+		
+		width: 100%;
+		
+	}
+	
+	
+	</style>
+	
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="scripts.js" type="text/javascript"></script>
+		<script src="debounce.min.js" type="text/javascript"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles.css" type="text/css">
+	</head>
+	
+	<body>
+		<div class = "app">
+		
+				
+				<div class = "w3-w" id = "screen">
+				
+					<div class = "w3-container" id = "banner">
+					</div>
+					
+					<div class = "editor w3-container w3-blue-grey">
+
+						<br>
+						<div class "radiolife w3-white">
+							<b>Arbeten:</b><br>
+							<input id = "police" type="radio" name="type" value="police" checked> Polis <br>
+							<input id = "raddningstjansten" type="radio" name="type" value="raddningstjansten" checked> Räddningstjänsten <br>
+							<input id = "forsakring" type="radio" name="type" value="dorsakring" checked> Folksam <br>
+							<input id = "ambulance" type="radio" name="type" value="ambulance" checked> Ambulans <br>
+							<input id = "cardealer" type="radio" name="type" value="cardealer" checked> Bilförsäljare <br>
+							<input id = "mechanic" type="radio" name="type" value="mechanic" checked> Mekaniker <br>
+							<input id = "bennys" type="radio" name="type" value="bennys" checked> Bennys <br>
+							<input id = "securitas" type="radio" name="type" value="securitas" checked> Securitas <br>
+							<input id = "lawyer" type="radio" name="type" value="lwayer" checked> Advokat <br>
+							<input id = "nightclub" type="radio" name="type" value="nightclub" checked> Nattklubben <br>
+							<br>
+						</div>
+						
+						<b>Telefonnummer</b>
+						<textarea class = "phone w3-white" rows="1" placeholder="07xxxxxx"></textarea>
+						<br>
+						<br>
+
+						<b>mailadress</b>
+						<textarea class = "phone w3-white" rows="1" placeholder="Discord-id@hotmail.com"></textarea>
+						<br>
+						<br>
+						
+						<b>Körkort</b>
+						<textarea class = "licenses w3-white" rows="1" placeholder="Vilka körkorts licenser du har (A, AB etc)"></textarea>
+						<br>
+						<br>
+						
+						<b>Tidigare erfarenheter</b>
+						<textarea class = "exp w3-white" rows="20" placeholder="Har du tidigare erfarenheter utav jobbet? Skriv det här då"></textarea>
+						<br>
+						<br>
+
+						
+						<button class="w3-button w3-green w3-left btnSend">Ansök</button>
+						<button class="w3-button w3-red w3-left btnClose">Avbryt</button>
+						
+					</div>
+					
+					
+				</div></div>	
+	</body>

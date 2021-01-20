@@ -1,0 +1,17 @@
+Locales['en'] = {
+  ['press_to_chop'] = "Tryck ~INPUT_CONTEXT~ för att skrota fordonet",
+  ['map_blip'] = "Skrot",
+  ['map_blip_shop'] = "Kurts bildelar",
+  ['no_vehicle'] = "Du måste sitta i fordonet för att kunna skrota den.",
+  ['open_shop'] = "Tryck ~INPUT_CONTEXT~ för att komma åt ~y~store~s~.",
+  ['sold'] = "Du har sålt %sx %s för SEK%s",
+  ['not_enough'] = 'Du har inte tillräckligt av det för att kunna sälja!',
+  ['shop_prompt'] = 'Tryck ~INPUT_CONTEXT~ för att prata med ~r~Nils~s~.',
+  ['item'] = '$%s',
+  ['shop_title'] = 'Nils bildelar',
+  ['cooldown'] = 'Du måste vänta %s sekunder innan du kan skrota ett fordon.',
+  ['call'] = 'Någon försöker skrota en bil hos Uffe.',
+  ['911'] = '112',
+  ['chop'] = 'Skicka Polispatrull genast!',
+  ['not_enough_cops'] = 'Inte tillräckligt med poliser i tjänst',
+}

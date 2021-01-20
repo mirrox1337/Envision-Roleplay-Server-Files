@@ -1,0 +1,10 @@
+CREATE TABLE `notes` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`charid` varchar(50) DEFAULT NULL,
+	`label` varchar(255) NOT NULL,
+	`subject` LONGTEXT NULL,	 
+	`x` DOUBLE NULL DEFAULT NULL, 
+	`y` DOUBLE NULL DEFAULT NULL, 
+	`z` DOUBLE NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+);

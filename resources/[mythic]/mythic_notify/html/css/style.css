@@ -1,0 +1,47 @@
+body {
+    background-color: transparent !important;
+}
+
+.template, .notification {
+    display: none;
+}
+
+.notif-container {
+    width: 20%;
+    position: absolute;
+    right: 15%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.notification {
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* https://getbootstrap.com/docs/4.0/utilities/colors/ */
+.success {
+    background: #28a745;
+    color: #fff;
+}
+
+.inform {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.error {
+    background: #dc3545;
+    color: #fff;
+}
+
+.warning {
+    background: #ffc107;
+    color: #343a40;
+}

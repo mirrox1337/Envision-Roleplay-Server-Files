@@ -1,0 +1,16 @@
+Locales ['en'] = {
+  ['AD'] = 'Made by SR at DOJSRC',
+   ['Channel sellect'] = 'Radio kanaler', 
+  ['leavepolice'] = 'Lämna Polis/EMS kanal',
+  ['R1'] = 'Polisradio',
+  ['R2'] = 'Ambulansradio',
+  ['R3'] = 'Delad radio Polis/EMS',
+  ['R4'] = 'SO Radio',
+  ['R5'] = 'PD/SO Shared Radio',
+  ['leavepublic'] = 'Lämna allmän kanal',
+  ['CB1'] = 'CB1',
+  ['CB2'] = 'CB2',
+  ['CB3'] = 'CB3',
+  ['CB4'] = 'CB4',
+  ['CB5'] = 'CB5',
+}

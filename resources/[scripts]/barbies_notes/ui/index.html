@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body{
+  			display:none;
+		}
+	</style>
+</head>
+<body>		
+	<div id="container" noteid="">
+		<div id="textbox">
+		  	<input id="label" type="text" placeholder="Rubrik" spellcheck="false">
+			<textarea id="text" rows="16" spellcheck="false"></textarea>
+		</div>
+		<div id="buttons">
+			<button id="rip">Riv</button> 
+			<button id="throw">Kasta</button>
+			<button id="save">Spara</button> 
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		window.addEventListener('message', function(event){
+			if (event.data.action == "createNote"){
+				document.getElementById("container").setAttribute('noteid', "nil");
+				$('body').show();
+			}else if (event.data.action == "showNote"){
+				let data = event.data.data;
+				document.getElementById("container").setAttribute('noteid', data.id);
+				document.getElementById("label").value=data.label;
+				document.getElementById("text").innerHTML=data.subject;
+				document.getElementById("text").value=data.subject;
+				$('body').show();	
+			}
+		});
+
+		$(document).keyup(function(e){
+			if (e.keyCode == 27){
+				reset()
+			}
+		})
+
+		$('#throw').click(function() {
+			var label = document.getElementById("label").value;
+			var subject = document.getElementById("text").value;
+			
+			var noteid = document.getElementById("container").getAttribute('noteid');
+			console.log(noteid)
+			$.post('http://barbies_notes/throw', JSON.stringify({
+				noteid: noteid,
+        		rubrik: label,
+				text: subject	
+			}));
+			reset()
+		});
+
+		$('#rip').click(function() {
+			var noteid = document.getElementById("container").getAttribute('noteid');
+			$.post('http://barbies_notes/rip', JSON.stringify({
+				noteid: noteid
+			}));
+			reset()
+		});
+
+		$('#save').click(function() {
+			var label = document.getElementById("label").value;
+			var subject = document.getElementById("text").value;
+			var noteid = document.getElementById("container").getAttribute('noteid');
+			$.post('http://barbies_notes/save', JSON.stringify({
+				noteid: noteid,
+        		label: label,
+				subject: subject	
+			}));
+			reset()
+		});
+	});
+
+	function reset(){	
+		$('body').hide();
+		document.getElementById("container").setAttribute('noteid', "nil");
+		document.getElementById("label").value='';
+		document.getElementById("text").innerHTML='';
+		document.getElementById("text").value='';
+		$.post('http://barbies_notes/close');
+	};
+
+	</script>
+</body>
+</html>

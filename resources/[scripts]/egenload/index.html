@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>hejsan</title>
+  <head:/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      @keyframes spinner {
+      0% {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+      }
+      100% {
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+      }
+      }
+      .spin::before {
+      animation: 1.5s linear infinite spinner;
+      animation-play-state: inherit;
+      border: solid 1px #cfd0d1;
+      border-bottom-color: #1c87c9;
+      border-radius: 50%;
+      content: "";
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      will-change: transform;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spin"></div>
+  </body>
+</html>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- PARTICLE SYSTEM -->
+<div class="page-bg"></div>
+
+<div class="animation-wrapper">
+  <div class="particle particle-1"></div>
+  <div class="particle particle-2"></div>
+  <div class="particle particle-3"></div>
+  <div class="particle particle-4"></div>
+</div>
+
+<div class="cell">
+  <div class="wrapper">
+    <div class="spinner spinner3"></div>
+  </div>
+</div>
+
+
+<div class="container" style="width: 200px; height: 20px; overflow:
+hidden;">
+<div id="floating-div" style="width: 200px; height:200px; overflow:
+auto;">
+ Pausa musiken på space</div>
+</div>
+
+<audio id="leson" src="music.mp3" autoplay="true" hidden="true" loop="true"/>
+<script>
+
+var play = false;
+var myAudio = document.getElementById("leson");
+
+myAudio.volume = 0.1;
+
+function onKeyDown(event) {
+        switch (event.keyCode) {
+            case 32: //SpaceBar                    
+                if (play) {
+                    myAudio.pause();
+                    play = false;
+                } else {
+                    myAudio.play();
+                    play = true;
+                }
+                break;
+        }
+  return false;
+}
+
+window.addEventListener("keydown", onKeyDown, false);
+</script>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+  
+</body>
+</html>
+

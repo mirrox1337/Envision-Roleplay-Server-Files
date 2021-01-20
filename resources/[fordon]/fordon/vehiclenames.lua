@@ -1,0 +1,8 @@
+Citizen.CreateThread(function()
+    AddTextEntry("0x33EF674D", "Honda NSX")
+    AddTextEntry("0x8C34D838", "Nissan Skyline GTR R32")
+    AddTextEntry("0xB1B1E846", "BMW M2")
+    AddTextEntry("0x9790D1BD", "Nissan GTR")
+    AddTextEntry("0xF76F6090", "Audi R8 2020")
+    AddTextEntry("0x7DF88D29", "Audi RS6")
+end)

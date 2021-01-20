@@ -1,0 +1,17 @@
+Locales['en'] = {
+	['GPS_info'] = 'Du har en ny kund markerad på din gps',
+	['cancel_mission'] = 'Du har avbrutit uppdraget',
+	['pickup'] = '~INPUT_CONTEXT~ För att tvätta fönstret',
+	['end_service'] = 'Gå ur tjänst',
+	['take_service'] = 'Börja arbeta',
+	['end_service_notif'] = 'Du har gått ur tjänst',
+	['wait_15'] = 'Skärp dig, du får vänta 15',
+	['take_service_notif'] = 'Tar  Jobb',
+	['start_job'] = 'Tryck DEL för att börja jobba',
+	['Vehicle_Menu_Title'] = 'Arbetsfordon',
+	['in_vehicle'] = 'Gå ut ur bilen!',
+	['vehicle_broken'] = ' Du...reparera bilen.!',
+	['bad_vehicle'] = 'Du kan bara förvara tjänstefordon',
+	['not_good_veh'] = 'Du måste sitta i arbetsfordonet',
+	['stop_npc'] = ' omöjligt : ta dig tillbaka',
+}
